@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.1//EN"
+"http://ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Hello, World!</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- 
+    atributo que define o tipo
+    types: 
+      text/ecmascript: interpretado como ECMAScript, baseado no padrão de scripting ECMA-262, 
+      text/jscript: variação do ECMAScript, criada pela Microsoft para o Internet Explorer, 
+      
+      - destinados ao VBScript da Microsoft, uma linguagem de scripting completamente
+      text/vbscript, 
+      text/vbs 
+    Type MIME (Multipurpose Internet Mail Extension): identificar como o conteúdo está codificado mais o formato em específico (js)
+    -->
+    <script type="text/javascript">
+      function hello() {
+        // diz alô para o mundo
+        var msg = "Hello, World!";
+        document.open();
+        document.write(msg);
+        document.close();
+      }
+    </script>
+  </head>
+  <body onload="hello()">
+    <p>Hi</p>
+  </body>
+</html>
