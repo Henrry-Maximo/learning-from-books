@@ -9,7 +9,8 @@ var readAsync = function(file) {
       callback(err); // Retorna erro
       return;
     }
-    callback(null, data); // Retorna dados
+    return (null, data);
+    // callback(null, data);
   });
   var end = new Date().getTime();
 
