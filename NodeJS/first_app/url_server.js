@@ -30,10 +30,10 @@ var server = http.createServer(function (request, response) {
   response.writeHead(200, { "Content-Type": "text/html" });
   response.write("<h1>Data of query string</h1>");
 
-  // "Toda URL é string até você parsear e libertar os dados escondidos dentro dela!"
+  // "Toda URL é string até você parsear e libertar (transformar em objeto) os dados escondidos dentro dela!"
   var result = url.parse(request.url, true);
 
-  valuesURl(result);
+  // valuesURl(result);
 
   for (var key in result.query) {
     response.write("<h2>" + key + " : " + result.query[key] + "</h1>");
@@ -41,6 +41,7 @@ var server = http.createServer(function (request, response) {
       `<h2 style="color: red;"> ${key} : ${result.query[key]} </h2>`
     );
   }
+  response.end();
 });
 
 server.listen(3000, function () {

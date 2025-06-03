@@ -2,12 +2,17 @@ var http = require('http'); // module native
 
 /*
 Reparem na complexidade do nosso código: o roteamento foi tratado através dos
-comandosif e else, e a leitura de url é obtida através da função request.url() que
+comandos if e else, e a leitura de url é obtida através da função request.url() que
 retorna uma string sobre o que foi digitado na barra de endereço do browser. Esses
-endereços utilizam padrões para capturar valores na url. Esses padrões são: query
-strings ( ?nome=joao) e path ( /admin). Em um projeto maior, tratar todas as urls
-dessa maneira seria trabalhoso e confuso demais. No Node.js, existe o módulo nativo
-chamado url, que é responsável por fazer parser e formatação de urls.
+endereços utilizam padrões para capturar valores na url. 
+
+Esses padrões são
+  -> query strings ( ?nome=joao)
+  -> path ( /admin). 
+  
+Em um projeto maior, tratar todas as urls dessa maneira seria trabalhoso e 
+confuso demais. No Node.js, existe o módulo nativo chamado url, que é responsável 
+por fazer parser e formatação de urls.
 */
 
 // var verifyUrl = function(request, response) {
@@ -25,8 +30,14 @@ chamado url, que é responsável por fazer parser e formatação de urls.
 // };
 
 var server = http.createServer(function(request, response) {
-  response.writeHead(200, { "Content-Type": "text/html" });
+  response.writeHead(
+    200, // status da resposta
+    { 
+      "Content-Type": "text/html" // conteúdo da resposta
+    }
+  );
 
+  // encadeamento de rotas utilizando if/else
   if (request.url == "/") {
     response.write("<h1>Page main</h1>")
   } else if (request.url == "/bem-vindo") {

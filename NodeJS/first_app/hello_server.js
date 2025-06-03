@@ -8,6 +8,13 @@ rota raiz “/” um resultado em formato html com a mensagem: Hello World!.
 Vá para a linha de comando e rode node hello_server.js. Faça o teste
 acessando, no seu navegador, o endereço http://localhost:3006 .
 
+Função http.createServer() é responsável por levantar um servidor e o seu callback 
+function(request, response) apenas é executado quando o servidor recebe uma requisição
+
+Event Loop -> responsável por lidar com a emissão de eventos, verifica constantemente
+se o servidor for requisitado e, quando ele recebe uma requisição, ele emite um evento
+para que seja executado o seu callback
+
 */
 
 var server = http.createServer(function(request, response) {
@@ -18,6 +25,7 @@ var server = http.createServer(function(request, response) {
 );
 
 // server.listen(3006);
+// receber em parâmetro uma função
 server.listen(3006, function() {
   console.log('Server is Running! 👌');
 });
