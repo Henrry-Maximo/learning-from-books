@@ -2,15 +2,18 @@
 
 Repositório dedicado a centralizar minhas anotações, insights e exercícios práticos baseados nos livros de programação e computação que estou lendo.
 
-## Livros em Destaque
+## Livros
 
 | Livro | Status | Tecnologias Utilizadas |
 | :--- | :--- | :--- |
 | **Entendendo Algoritmos** (Aditya Bhargava) | Lendo | JavaScript |
-| **A Prática da Programação** (Brian W. Kernighan) | Pausado | C / JavaScript |
-| **Fundamentos em Programação Assembly** | Pausado | Assembly |
+| **Aplicações Web Real-Time com NodeJS** (Caio Ribeiro Pereira) | Lendo | JavaScript |
+| **Desenvolvimento Rápido de Sistemas** () | Pausado | ... |
+| **A Prática da Programação** (Brian W. Kernighan) | Pausado | ... |
+| **Fundamentos em Programação Assembly** (José Augusto N. G. Manzano) | Pausado | Assembly |
 | **Como Programar em C** (H.M. Deitel e P.J. Deitel) | Pausado | C |
-| **Entendendo Estruturas de Dados** (Marcello La Rocca) | Pausado | C |
+| **Entendendo Estruturas de Dados** (Marcello La Rocca) | Pausado | ... |
+| **Algoritmos e Programação: Teoria e Prática** () | Pausado | ... |
 
 ## Como está organizado?
 
