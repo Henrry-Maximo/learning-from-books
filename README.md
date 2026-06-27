@@ -8,12 +8,15 @@ Repositório dedicado a centralizar minhas anotações, insights e exercícios p
 | :--- | :--- | :--- |
 | **Entendendo Algoritmos** (Aditya Bhargava) | Lendo | JavaScript |
 | **Aplicações Web Real-Time com NodeJS** (Caio Ribeiro Pereira) | Lendo | JavaScript |
-| **Desenvolvimento Rápido de Sistemas** () | Pausado | ... |
+| **Como Programar em C** (H.M. Deitel e P.J. Deitel) | Lendo | C |
+| **Programação em Baixo Nível** (Igor Zhirkov) | Lendo | ... |
+| **Código: a Vida Secreta dos Computadores** (Charles Petzold) | Lendo | ... |
+| **O Programador Apaixonado** (Charles Petzold) | Lendo | ... |
 | **A Prática da Programação** (Brian W. Kernighan) | Pausado | ... |
 | **Fundamentos em Programação Assembly** (José Augusto N. G. Manzano) | Pausado | Assembly |
-| **Como Programar em C** (H.M. Deitel e P.J. Deitel) | Pausado | C |
 | **Entendendo Estruturas de Dados** (Marcello La Rocca) | Pausado | ... |
-| **Algoritmos e Programação: Teoria e Prática** () | Pausado | ... |
+| **Algoritmos e Programação: Teoria e Prática** (Cristina Ferting e Marco Medina) |Pausado | ... |
+| **Desenvolvimento Rápido de Sistemas** (Chris ) | Pausado | ... |
 
 ## Como está organizado?
 
