@@ -11,12 +11,12 @@ Repositório dedicado a centralizar minhas anotações, insights e exercícios p
 | **Como Programar em C** (H.M. Deitel e P.J. Deitel) | Lendo | C |
 | **Programação em Baixo Nível** (Igor Zhirkov) | Lendo | ... |
 | **Código: a Vida Secreta dos Computadores** (Charles Petzold) | Lendo | ... |
-| **O Programador Apaixonado** (Charles Petzold) | Lendo | ... |
+| **O Programador Apaixonado** (Chad Fowler) | Lendo | ... |
 | **A Prática da Programação** (Brian W. Kernighan) | Pausado | ... |
 | **Fundamentos em Programação Assembly** (José Augusto N. G. Manzano) | Pausado | Assembly |
 | **Entendendo Estruturas de Dados** (Marcello La Rocca) | Pausado | ... |
 | **Algoritmos e Programação: Teoria e Prática** (Cristina Ferting e Marco Medina) |Pausado | ... |
-| **Desenvolvimento Rápido de Sistemas** (Chris ) | Pausado | ... |
+| **Desenvolvimento Rápido de Sistemas** (Chris Gane) | Pausado | ... |
 
 ## Como está organizado?
 
