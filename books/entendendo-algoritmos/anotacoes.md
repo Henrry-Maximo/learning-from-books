@@ -1,3 +1,72 @@
+# Introdução
+
+- Um algoritmo é um conjunto de instruções que descrevem uma a realização de uma tarefa. Os algoritmos escolhidos são utilizado porque são rápido ou resolvem problemas interessantes (ambos os motivos).
+- No cap. 1 é possível utilizar a pesquisa binária para reduzir o número de etapas necessárias de 4 bilhões para 32 etapas. Aliás, o dispositivo de GPS utiliza um algoritmo de grafos podendo calcular a rota mais curta até o destino. Além da programação dinâmica, para escrever um algoritmo de IA para jogar damas.
+
+```
+Desafio: algoritmo de IA pra jogar damas.
+```
+
+- Tempo de execução do algoritmo em notação Big O.
+- Diversas linguagens implementar, através de métodos nativos, os algoritmos trabalhados no livro. Precisamos entender o ponto forte e fraco de cada algoritmo. A ideia é aprender a comparar o desempenho de diferentes algoritmos.
+- Algoritmos: merge sort (ordenação por mistura), quicksort (ordenação rápida)...
+- Estrutura de dados: um array (vetor), uma lista (linked list)?
+
+- Em um exemplo simples, temos uma lista e com uma pesquisa simples, podemos encontrar um item em 4 milissegundos, pois já percorremos e encontramos ao mesmo tempo. Enquanto que nos restantes dos algoritmos, que iremos ver, é necessário percorrer toda a lista primeiro, o que levaria 13 milissegundos só para ler todos os items primeiro.
+
+- Solução de problemas, se deve aprender a programar e depois você pode aprender a linguagem que deseja.
+- Conceitos necessários: álgebra básica, interpretação de texto, lógica básica.
+- Recomendação: se usa uma distro GNU, use a linguagem Bash (aprender algoritmos, e programar, por tabela).
+
+## Pequisa binária
+
+- Por exemplo, temos uma lista telefônica e queremos encontrar alguém que tenha a primeira letra como: "K", ou seja abrimos e começar pela metade até chegar no resultado desejado. Isto se caracteriza como um PROBLEMA de busca.
+- A pesquisa binária recebe como entrada uma lista ordenada de elementos. É necessário estar ordenado. Se o elemento estiver na lista, a pesquisa retornará, se não estiver, retornará vazio. Provocando um erro.
+- Um exemplo para compreensão do algoritmo, é imaginar um número entre 1 e 100. Agora precisamos descobrir esse valor imaginado. Então usamos o valor "50", pois ele possibilita termos uma vantagem, o programa nos dirá se está "baixo demais" ou "alto demais", pensando que o valor é 27. Obtemos então a resposta do programa como "alto demais". Então agora sabemos que o número não está entre 50 e 100. Ou seja, está abaixo do "50". Vamos então colocar o valor "25", sempre a metade. E, então o programa dirá: "baixo demais"... agora sabemos que o valor está entre 25 e 50. Observe que a ideia é descobrir o item com a menor quantidade de iteração possível (tentativas).
+Se continuarmos, será "36" e o programa diria: "alto demais". Então agora sabemos que o valor está entre 25 e 36, sendo "29" a metade, e agora o programa responde: "alto demais". Então está entre 25 e 29, e se não é o 25 e nem o 29. Sobra o 26, 27 e 28. Então escolhemos o "27" e acertamos!
+- O jogo da adivinhação!
+- Também podemos ir de um por um, chamada de pesquisa simples. Se fosse 99 números, precisaria de 99 tentativas.
+- Então na pesquisa binária, por etapas, eliminamos diversos items, e a quantidade vai aumentando de acordo com a etapa.
+- logaritmico: descreve a quantidade de vezes que eu preciso fazer uma operação pra chegar em um determinado resultado.
+
+### Exemplo em Python
+
+- O algoritmo usa uma estrutura de dados chamada array para armazenar uma sequência de elementos em uma lista, inicializand o índice como 0.
+
+```
+baixo = 0 // inicializa com o primeiro elemento da lista
+alto = len(lista) - 1 // comprimento de uma lista subtraindo o valor de 1
+
+meio = (baixo + alto) / 2 // o meio sempre será arredondado para baixo
+chute = lista[meio]
+
+if chute < item:
+    baixo = meio + 1
+```
+
+Código:
+```
+def pesquisa_binaria(lista, item):
+    baixo = 0
+    alto = len(lista) - 1
+    while baixo <= alto:
+        meio = (baixo + alto) / 2
+        chute = lista[meio]
+        if chute == item:
+            return meio
+        if chute > item:
+            alto = meio - 1
+        else:
+            baixo = meio + 1
+    return None
+
+minha_lista = [1, 3, 5, 7, 9]
+print pesquisa_binaria(minha_lista, 3)
+print pesquisa_binaria(minha_lista, -1)
+```
+
+- Desafio: escrever o mesmo algoritmo para encontrar uma palavra em um dicionário
+
 # Capítulo 4
 
 ## Quicksort.
